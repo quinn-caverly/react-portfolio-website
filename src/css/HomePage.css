@@ -1,0 +1,148 @@
+
+.MiddleLeftSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+
+	position: absolute;
+
+	top: 25%;
+	left: 5%;
+	right: 30%;
+	bottom: 45%;
+}
+
+.MiddleLeftSubSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+
+	position: absolute;
+
+	top: 45%;
+	left: 5%;
+	right: 30%;
+	bottom: 40%;
+}
+
+
+
+/*Weights for playfair display:[400,500,600,700,800,900]*/
+.Title {
+	font-family: "Playfair Display";
+	color: #fff;
+	font-weight: 900;
+	font-size: 45px;
+
+	padding: 0.5rem;
+}
+
+.SubTitle {
+	font-family: "Playfair Display";
+	color: #fff;
+	font-weight: 500;
+	font-size: 35px;
+
+	padding: 0.5rem;
+}
+
+
+
+.BalloonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: left;
+
+	position: absolute;
+
+	right: 10%;
+	top: 10%;
+	bottom: 30%;
+	left: 60%;
+}
+
+.BottomButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "Playfair";
+	font-weight: 600;
+
+	padding: 2rem;
+	font-size: 3rem;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+
+	/* uses concepts from https: //fossheim.io/writing/posts/css-text-gradient/ */
+
+	/* Create the gradient. */
+	background-image: linear-gradient(180deg, #f6e5c3 50%, #d7b262 50%);
+
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.BottomButton:hover {
+	background-image: linear-gradient(180deg, #f6e5c3 45%, #d7b262 45%);
+}
+
+.ExperienceButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "Playfair";
+	font-weight: 600;
+	font-style: italic;
+
+	padding: 2rem;
+	font-size: 3rem;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	color: #f6e5c3;
+}
+
+.AboutButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "Playfair";
+	font-weight: 600;
+	font-style: italic;
+
+	padding: 2rem;
+	font-size: 3rem;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	color: #f6e5c3;
+}
+
+.ProjectsButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "Playfair";
+	font-weight: 600;
+	font-style: italic;
+
+	padding: 2rem;
+	font-size: 3rem;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	color: #f6e5c3;
+}

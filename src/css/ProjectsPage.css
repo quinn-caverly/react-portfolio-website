@@ -1,0 +1,89 @@
+.RightBoxScroller {
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 20%;
+	right: 0%;
+
+	overflow: auto;
+}
+
+/* This holds the project previews */
+.RightBox {
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	justify-content: space-evenly;
+
+	position: absolute;
+	top: 12.5%;
+	bottom: 12.5%;
+	left: 0%;
+
+	width: 175%;
+	height: 75%;
+}
+
+/* this holds the skills sections */
+.LeftBox {
+	position: absolute;
+
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 80%;
+
+	background: rgba(35, 31, 32, 0.7);
+}
+
+.Title {
+	font-family: "Playfair Display";
+	color: #f6e5c3;
+	font-weight: 500;
+	font-size: 35px;
+
+	padding: 0.5rem;
+}
+
+.Skill {
+	font-family: "Playfair Display";
+	color: #f6e5c3;
+	font-weight: 400;
+	font-size: 25px;
+
+	padding: 0.5rem;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.Subskill {
+	font-family: "Playfair Display";
+	color: #f6e5c3;
+	font-weight: 400;
+	font-size: 15px;
+
+	padding: 0.5rem;
+}
+
+/* each project will have generally the same format, 
+besides for the images section which may be project specific */
+.ProjectBox {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(35, 31, 32, 0.5);
+
+	position: relative;
+
+	height: 100%;
+	aspect-ratio: 1.618;
+
+	border-radius: 3.5%;
+	overflow: hidden;
+
+	border-style: solid;
+	border-color: rgba(35, 31, 32, 1.0);
+	border-width: 3px;
+
+	cursor: pointer;
+}

@@ -1,0 +1,42 @@
+/* the bottom section will be for name of project, description, etc. */
+.BottomSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+
+	top: 75%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+
+	background-color: rgba(35, 31, 32, 0.5);
+}
+
+.ImagesHolder {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	position: absolute;
+
+	overflow: hidden;
+
+	top: 0%;
+	bottom: 25%;
+	left: 0%;
+	right: 0%;
+
+	background-color: rgba(35, 31, 32, 0.5);
+}
+
+.Title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "Playfair Display";
+	color: #fff;
+	font-weight: 900;
+	font-size: 25px;
+}

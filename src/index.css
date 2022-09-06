@@ -1,0 +1,25 @@
+body {
+    overflow: hidden;
+    /* Hide scrollbars of the root html layer, individual components can still have their own scrollbars*/
+}
+
+/* changes how scrollbars appear to the whole site */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(35, 31, 32, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #d7b262 0%, #f7d98f 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(180deg, #f7d98f 0%, #d7b262 99%);
+    border-radius: 100px;
+}
