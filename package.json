@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://quinn-caverly.github.io/react-portfolio-wesbite",
+  "homepage": "https://quinn-caverly.github.io/react-portfolio-wesbite",
   "private": true,
   "dependencies": {
     "@fontsource/playfair-display": "^4.5.10",
