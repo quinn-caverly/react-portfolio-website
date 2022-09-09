@@ -7,6 +7,7 @@ import ProjectPreview from "./ProjectPreview";
 import Colormash from "./HomePageComponents/Colormash";
 import HomeButton from "./HomeButton";
 import FancyLetter from "./FancyLetter";
+import Skill from "./Skill";
 
 const MainSection = styled.section`
 	display: flex;
@@ -73,6 +74,25 @@ export default class ProjectsPage extends React.Component {
 
 	constructor(props) {
 		super(props);
+		this.state = { hoveredSkills: [] };
+	}
+
+	updateHover(project) {
+		if (project == "DsJobs") {
+			this.setState({
+				hoveredSkills: ["Python", "Matplotlib", "Pandas"],
+			});
+		} else if (project == "Spiderweb") {
+			this.setState({
+				hoveredSkills: ["Java", "FX", "CSS"],
+			});
+		} else if (project == "PortfolioWebsite") {
+			this.setState({
+				hoveredSkills: ["ReactJS", "CSS", "HTML", "JavaScript"],
+			});
+		} else {
+			this.setState({ hoveredSkills: [] });
+		}
 	}
 
 	/* The LeftTitleSection will be placed after the LeftSkillsSection,
@@ -94,22 +114,56 @@ export default class ProjectsPage extends React.Component {
 					}}
 				>
 					<LeftSkillsSection>
-						<div className="Skill">
-							Java
-							<div className="Subskill">FX</div>
-							<div className="Subskill">Swing</div>
-						</div>
-						<div className="Skill">
-							Python
-							<div className="Subskill">Pandas</div>
-							<div className="Subskill">Matplotlib</div>
-						</div>
-						<div className="Skill">
-							React JS
-							<div className="Subskill">CSS</div>
-							<div className="Subskill">JavaScript</div>
-							<div className="Subskill">HTML</div>
-						</div>
+						<Skill
+							type="Skill"
+							name="Java"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Subskill"
+							name="FX"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Subskill"
+							name="Swing"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Skill"
+							name="Python"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Subskill"
+							name="Pandas"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Subskill"
+							name="Matplotlib"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Skill"
+							name="ReactJS"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Subskill"
+							name="CSS"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Subskill"
+							name="JavaScript"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
+						<Skill
+							type="Subskill"
+							name="HTML"
+							hoveredSkills={this.state.hoveredSkills}
+						></Skill>
 					</LeftSkillsSection>
 					<LeftTitleSection>
 						<FancyLetter
@@ -154,6 +208,8 @@ export default class ProjectsPage extends React.Component {
 								transition: { duration: 1 },
 							}}
 							whileHover={{ borderWidth: "5px" }}
+							onMouseEnter={() => this.updateHover("Spiderweb")}
+							onMouseLeave={() => this.updateHover(null)}
 						>
 							<ProjectPreview variant="Spiderweb"></ProjectPreview>
 						</motion.div>
@@ -165,8 +221,25 @@ export default class ProjectsPage extends React.Component {
 								transition: { duration: 1 },
 							}}
 							whileHover={{ borderWidth: "5px" }}
+							onMouseEnter={() => this.updateHover("DsJobs")}
+							onMouseLeave={() => this.updateHover(null)}
 						>
 							<ProjectPreview variant="DsJobs"></ProjectPreview>
+						</motion.div>
+						<motion.div
+							className="ProjectBox"
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1,
+								transition: { duration: 1 },
+							}}
+							whileHover={{ borderWidth: "5px" }}
+							onMouseEnter={() =>
+								this.updateHover("PortfolioWebsite")
+							}
+							onMouseLeave={() => this.updateHover(null)}
+						>
+							<ProjectPreview variant="PortfolioWebsite"></ProjectPreview>
 						</motion.div>
 					</div>
 				</div>
@@ -175,56 +248,3 @@ export default class ProjectsPage extends React.Component {
 		);
 	}
 }
-
-/*
-			<>
-				<div className="LeftBox">
-					<LeftSkillsSection>
-						<div className="Skill">
-							Java
-							<div className="Subskill">FX</div>
-							<div className="Subskill">Swing</div>
-						</div>
-						<div className="Skill">
-							Python
-							<div className="Subskill">Pandas</div>
-							<div className="Subskill">Matplotlib</div>
-						</div>
-						<div className="Skill">
-							React JS
-							<div className="Subskill">CSS</div>
-							<div className="Subskill">JavaScript</div>
-							<div className="Subskill">HTML</div>
-						</div>
-					</LeftSkillsSection>
-					<LeftTitleSection>
-						<div className="Title">Skills</div>
-					</LeftTitleSection>
-				</div>
-				<div className="RightBox">
-					<motion.div
-						className="ProjectBox"
-						initial={{ opacity: 0 }}
-						animate={{
-							opacity: 1,
-							transition: { duration: 1 },
-						}}
-						whileHover={{ borderWidth: "5px" }}
-					>
-						<ProjectPreview variant="DsJobs"></ProjectPreview>
-					</motion.div>
-					<motion.div
-						className="ProjectBox"
-						initial={{ opacity: 0 }}
-						animate={{
-							opacity: 1,
-							transition: { duration: 1 },
-						}}
-						whileHover={{ borderWidth: "5px" }}
-					>
-						<ProjectPreview variant="Spiderweb"></ProjectPreview>
-					</motion.div>
-				</div>
-			</>
-
-			*/

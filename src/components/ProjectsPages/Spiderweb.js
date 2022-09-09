@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import picNoBorders from "../../images/ProjectImages/Spiderweb/picNoBorders.png";
 import complexDiagram from "../../images/ProjectImages/Spiderweb/complexDiagram.png";

@@ -3,21 +3,18 @@ which is being shown */
 
 import React from "react";
 
-import DsJobs from "./ProjectPreviews/DsJobs.js"
-import Spiderweb from"./ProjectPreviews/Spiderweb.js"
+import DsJobs from "./ProjectPreviews/DsJobs.js";
+import Spiderweb from "./ProjectPreviews/Spiderweb.js";
+import PortfolioWebsite from "./ProjectPreviews/PortfolioWebsite.js";
 
 export default class ProjectPreview extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = { variant: props.variant };
-	}
-
-  render() {    
-	if (this.props.variant === "DsJobs") {
+	render() {
+		if (this.props.variant === "DsJobs") {
 			return <DsJobs />;
-    }
-    else if (this.props.variant === "Spiderweb") {
+		} else if (this.props.variant === "Spiderweb") {
 			return <Spiderweb />;
-    }
+		} else if (this.props.variant === "PortfolioWebsite") {
+			return <PortfolioWebsite />;
+		}
 	}
 }

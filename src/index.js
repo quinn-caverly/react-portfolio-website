@@ -10,6 +10,7 @@ import ExperiencePage from "./components/ExperiencePage";
 
 import "./index.css";
 import Spiderweb from "./components/ProjectsPages/Spiderweb";
+import PortfolioWebsite from "./components/ProjectsPages/PortfolioWebsite";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
 			<Route path="/Projects" element={<ProjectsPage />}></Route>
 			<Route path="/Projects/DsJobs" element={<DsJobs />}></Route>
 			<Route path="/Projects/Spiderweb" element={<Spiderweb />}></Route>
+			<Route path="/Projects/PortfolioWebsite" element={<PortfolioWebsite />}></Route>
 			<Route path="/Experience" element={<ExperiencePage />}></Route>
 		</Routes>
 	</BrowserRouter>

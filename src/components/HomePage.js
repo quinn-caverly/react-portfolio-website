@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import "../css/HomePage.css";
 import Colormash from "./HomePageComponents/Colormash";
-import FancyLetter from "./FancyLetter";
 import MainTitleStringComponent from "./HomePageComponents/MainTitleStringComponent";
 
 const MainSection = styled.section`
@@ -57,23 +56,6 @@ const BottomButtonSection = styled.section`
 	bottom: 20%;
 `;
 
-const Button = styled(motion.button)`
-	padding: 1rem 3rem;
-	font-size: 1rem;
-	border: 2px solid #fff;
-	border-radius: 4px;
-	outline: none;
-	cursor: pointer;
-	background: transparent;
-	color: #fff;
-`;
-
-const ButtonBuffer = styled(motion.button)`
-	width: 30%;
-	background: transparent;
-	border: 2px solid transparent;
-`;
-
 export default class HomePage extends React.Component {
 	render() {
 		return (
@@ -123,7 +105,7 @@ export default class HomePage extends React.Component {
 									this.setState({ scheme: "green" })
 								}
 							>
-								About
+								Biography
 							</motion.div>
 						</Link>
 					</BottomButtonSection>

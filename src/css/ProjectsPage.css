@@ -20,7 +20,7 @@
 	bottom: 12.5%;
 	left: 0%;
 
-	width: 175%;
+	width: 250%;
 	height: 75%;
 }
 
@@ -57,11 +57,38 @@
 	justify-content: center;
 }
 
+.SkillHighlighted {
+	font-family: "Playfair Display";
+	color: #d7b262;
+	font-weight: 400;
+	font-size: 25px;
+
+	padding: 0.5rem;
+
+	align-items: center;
+	justify-content: center;
+}
+
 .Subskill {
 	font-family: "Playfair Display";
 	color: #f6e5c3;
 	font-weight: 400;
 	font-size: 15px;
+
+	position: relative;
+	left: 5%;
+
+	padding: 0.5rem;
+}
+
+.SubskillHighlighted {
+	font-family: "Playfair Display";
+	color: #d7b262;
+	font-weight: 600;
+	font-size: 15px;
+
+	position: relative;
+	left: 5%;
 
 	padding: 0.5rem;
 }
@@ -82,7 +109,7 @@ besides for the images section which may be project specific */
 	overflow: hidden;
 
 	border-style: solid;
-	border-color: rgba(35, 31, 32, 1.0);
+	border-color: rgba(35, 31, 32, 1);
 	border-width: 3px;
 
 	cursor: pointer;
