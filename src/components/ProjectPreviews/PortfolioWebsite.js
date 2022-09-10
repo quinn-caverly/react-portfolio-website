@@ -12,7 +12,7 @@ export default class PortfolioWebsite extends React.Component {
 					<img src={WebsiteHomePage} alt="Website HomePage" />
 				</div>
 				<div className="BottomSection">
-					<div className="Title">
+					<div className="PreviewTitle">
 						This Website Created with ReactJS
 					</div>
 				</div>

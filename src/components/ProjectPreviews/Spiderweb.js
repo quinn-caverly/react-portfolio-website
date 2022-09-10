@@ -19,7 +19,7 @@ export default class Spiderweb extends React.Component {
 					<img src={AppImageWithoutDesktop} alt="Spiderweb image w/ desktop" />
 				</div>
 				<div className="BottomSection">
-					<div className="Title">
+					<div className="PreviewTitle">
 						NLP Based Java Productivity App, Similarity Between
 						Notes
 					</div>

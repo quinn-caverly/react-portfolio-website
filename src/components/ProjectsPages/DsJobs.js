@@ -55,6 +55,9 @@ export default class DsJobs extends React.Component {
 							Data
 						</div>
 					</div>
+					<div className="TableauEmbedHolder">
+						<TableauEmbed></TableauEmbed>
+					</div>
 					<a
 						className="ExternalLink"
 						href="https://colab.research.google.com/drive/1Bge-PuhmiWcS1jMxzToaXDsRXlLLnndD?usp=sharing"
@@ -80,10 +83,6 @@ export default class DsJobs extends React.Component {
 					>
 						Tableau Dashboard
 					</a>
-					<div className="TableauEmbedHolder">
-						<TableauEmbed></TableauEmbed>
-					</div>
-					<div className="Buffer"></div>
 				</div>
 				<HomeButton></HomeButton>
 			</SuperContainer>
