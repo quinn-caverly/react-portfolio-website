@@ -6,16 +6,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../css/HomePage.css";
 import Colormash from "./HomePageComponents/Colormash";
 import MainTitleStringComponent from "./HomePageComponents/MainTitleStringComponent";
-import Background from "./BackgroundColor";
 import BackgroundColor from "./BackgroundColor";
 
-const MainSection = styled.section`
-	height: 85%;
-	display: flex;
-	flex-direction: column;
-`;
-
-/* 	aspect-ratio: 1.777; */
 
 const BackgroundHolder = styled.section`
 	display: flex;
