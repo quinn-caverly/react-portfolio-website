@@ -7,6 +7,7 @@ import profilePic from "../images/profile_pic.jpeg";
 import "../css/AboutPage.css";
 import Colormash from "./HomePageComponents/Colormash";
 import HomeButton from "./HomeButton";
+import BackgroundColor from "./BackgroundColor";
 
 const BackgroundHolder = styled.section`
 	display: flex;
@@ -28,6 +29,7 @@ export default class AboutPage extends React.Component {
 	render() {
 		return (
 			<>
+				<BackgroundColor></BackgroundColor>
 				<BackgroundHolder>
 					<Colormash></Colormash>
 				</BackgroundHolder>
@@ -44,7 +46,7 @@ export default class AboutPage extends React.Component {
 					<div className="MiddleBottomSection">
 						<div className="Bio">
 							Quinn Caverly is currently an undergraduate student
-							at the Pennsylvania State Univerity. He is majoring
+							at the Pennsylvania State University. He is majoring
 							in Computational Data Science in the School of
 							Engineering and intends to graduate in 2025.
 						</div>

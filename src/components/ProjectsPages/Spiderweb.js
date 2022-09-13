@@ -15,6 +15,7 @@ import Colormash from "../HomePageComponents/Colormash";
 import HomeButton from "../HomeButton";
 import ImageHolder from "./components/ImageHolder";
 import TextBox from "./components/TextBox";
+import BackgroundColor from "../BackgroundColor";
 
 const SuperContainer = styled.section`
 	display: flex;
@@ -47,6 +48,7 @@ export default class Spiderweb extends React.Component {
 	render() {
 		return (
 			<SuperContainer>
+				<BackgroundColor></BackgroundColor>
 				<BackgroundHolder>
 					<Colormash></Colormash>
 				</BackgroundHolder>

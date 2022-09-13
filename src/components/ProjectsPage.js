@@ -8,6 +8,7 @@ import Colormash from "./HomePageComponents/Colormash";
 import HomeButton from "./HomeButton";
 import FancyLetter from "./FancyLetter";
 import Skill from "./Skill";
+import BackgroundColor from "./BackgroundColor";
 
 const MainSection = styled.section`
 	display: flex;
@@ -101,6 +102,7 @@ export default class ProjectsPage extends React.Component {
 	render() {
 		return (
 			<>
+				<BackgroundColor></BackgroundColor>
 				<BackgroundHolder>
 					<Colormash></Colormash>
 				</BackgroundHolder>

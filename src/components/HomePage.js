@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../css/HomePage.css";
 import Colormash from "./HomePageComponents/Colormash";
 import MainTitleStringComponent from "./HomePageComponents/MainTitleStringComponent";
+import Background from "./BackgroundColor";
+import BackgroundColor from "./BackgroundColor";
 
 const MainSection = styled.section`
 	height: 85%;
@@ -60,19 +62,38 @@ export default class HomePage extends React.Component {
 	render() {
 		return (
 			<>
-				<MainSection>
-					<BackgroundHolder>
-						<Colormash></Colormash>
-					</BackgroundHolder>
-				</MainSection>
+				<BackgroundColor></BackgroundColor>
+				<BackgroundHolder>
+					<Colormash></Colormash>
+				</BackgroundHolder>
 				<div className="MiddleLeftSection">
-					<MainTitleStringComponent stringInput="Q" fontSize="90px" className="FirstSubLetter"></MainTitleStringComponent>
-					<MainTitleStringComponent stringInput="uinn" fontSize="90px" className="NormalSubLetter"></MainTitleStringComponent>
-					<MainTitleStringComponent stringInput="C" fontSize="90px" className="LastLetter"></MainTitleStringComponent>
-					<MainTitleStringComponent stringInput="averly" fontSize="90px" className="NormalSubLetter"></MainTitleStringComponent>
+					<MainTitleStringComponent
+						stringInput="Q"
+						fontSize="90px"
+						className="FirstSubLetter"
+					></MainTitleStringComponent>
+					<MainTitleStringComponent
+						stringInput="uinn"
+						fontSize="90px"
+						className="NormalSubLetter"
+					></MainTitleStringComponent>
+					<MainTitleStringComponent
+						stringInput="C"
+						fontSize="90px"
+						className="LastLetter"
+					></MainTitleStringComponent>
+					<MainTitleStringComponent
+						stringInput="averly"
+						fontSize="90px"
+						className="NormalSubLetter"
+					></MainTitleStringComponent>
 				</div>
 				<div className="MiddleLeftSubSection">
-					<MainTitleStringComponent stringInput="Data Scientist || Computer Scientist" fontSize="40px" className="NormalSubLetter"></MainTitleStringComponent>
+					<MainTitleStringComponent
+						stringInput="Data Scientist || Computer Scientist"
+						fontSize="40px"
+						className="NormalSubLetter"
+					></MainTitleStringComponent>
 				</div>
 				<BottomSection>
 					<BottomButtonSection>

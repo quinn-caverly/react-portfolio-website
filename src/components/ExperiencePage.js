@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import "../css/HomePage.css";
 import Colormash from "./HomePageComponents/Colormash";
+import BackgroundColor from "./BackgroundColor";
 
 const BackgroundHolder = styled.section`
 	display: flex;
@@ -25,9 +26,12 @@ const BackgroundHolder = styled.section`
 export default class ExperiencePage extends React.Component {
 	render() {
 		return (
-			<BackgroundHolder>
-				<Colormash></Colormash>
-			</BackgroundHolder>
+			<>
+				<BackgroundColor></BackgroundColor>
+				<BackgroundHolder>
+					<Colormash></Colormash>
+				</BackgroundHolder>
+			</>
 		);
 	}
 }

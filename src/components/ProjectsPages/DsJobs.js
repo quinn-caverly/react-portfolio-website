@@ -12,6 +12,7 @@ import TableauEmbed from "./components/TableauEmbed";
 import HomeButton from "../HomeButton";
 
 import { Document, Page } from "react-pdf";
+import BackgroundColor from "../BackgroundColor";
 
 const SuperContainer = styled.section`
 	display: flex;
@@ -44,6 +45,7 @@ export default class DsJobs extends React.Component {
 	render() {
 		return (
 			<SuperContainer>
+				<BackgroundColor></BackgroundColor>
 				<BackgroundHolder>
 					<Colormash></Colormash>
 				</BackgroundHolder>
