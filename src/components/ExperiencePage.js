@@ -28,9 +28,6 @@ export default class ExperiencePage extends React.Component {
 		return (
 			<>
 				<BackgroundColor></BackgroundColor>
-				<BackgroundHolder>
-					<Colormash></Colormash>
-				</BackgroundHolder>
 			</>
 		);
 	}

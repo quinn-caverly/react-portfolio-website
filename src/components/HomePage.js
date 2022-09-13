@@ -55,9 +55,6 @@ export default class HomePage extends React.Component {
 		return (
 			<>
 				<BackgroundColor></BackgroundColor>
-				<BackgroundHolder>
-					<Colormash></Colormash>
-				</BackgroundHolder>
 				<div className="MiddleLeftSection">
 					<MainTitleStringComponent
 						stringInput="Q"

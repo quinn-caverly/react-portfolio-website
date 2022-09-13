@@ -26,14 +26,10 @@ const BackgroundHolder = styled.section`
 `;
 
 export default class AboutPage extends React.Component {
-	render() {
+	render() { 
 		return (
 			<>
 				<BackgroundColor></BackgroundColor>
-				<BackgroundHolder>
-					<Colormash></Colormash>
-				</BackgroundHolder>
-
 				<div className="MiddleSection">
 					<div className="ProfilePicOutLine">
 						<img

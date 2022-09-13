@@ -41,9 +41,6 @@ export default class PortfolioWebsite extends React.Component {
 		return (
 			<SuperContainer>
 				<BackgroundColor></BackgroundColor>
-				<BackgroundHolder>
-					<Colormash></Colormash>
-				</BackgroundHolder>
 				<div className="ContentBoxScroller">
 					<div className="TitleBox">
 						<div className="ProjectTitle">
