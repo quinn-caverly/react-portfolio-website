@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio-website/static/css/main.3e049e36.css",
-    "main.js": "/react-portfolio-website/static/js/main.dfc6e552.js",
+    "main.js": "/react-portfolio-website/static/js/main.b3a77d51.js",
     "static/media/chromeextensionpic.jpg": "/react-portfolio-website/static/media/chromeextensionpic.c76856a13dab96580bc0.jpg",
     "static/media/colormash.png": "/react-portfolio-website/static/media/colormash.f4123e73c7dbc38b748b.png",
     "static/media/tableau_pic.png": "/react-portfolio-website/static/media/tableau_pic.8ca91086eb5607179d9c.png",
@@ -11,15 +11,16 @@
     "static/media/complexDiagram.png": "/react-portfolio-website/static/media/complexDiagram.924d54fff579e8894c8f.png",
     "static/media/WebsiteHomePage.png": "/react-portfolio-website/static/media/WebsiteHomePage.034d13bb7e1197fec8be.png",
     "static/media/someStandardNote.png": "/react-portfolio-website/static/media/someStandardNote.4f0c245cfd4e322ceeb3.png",
+    "static/media/homepageblocked.png": "/react-portfolio-website/static/media/homepageblocked.03642c94ef784515f378.png",
     "static/media/someReadingNote.png": "/react-portfolio-website/static/media/someReadingNote.ad69c36048cd83314f8e.png",
     "static/media/someDailyNote.png": "/react-portfolio-website/static/media/someDailyNote.1b60f2d8a011d4ca18a7.png",
     "static/media/classifierExample.png": "/react-portfolio-website/static/media/classifierExample.c4cd699ab04dec7a07bb.png",
     "index.html": "/react-portfolio-website/index.html",
     "main.3e049e36.css.map": "/react-portfolio-website/static/css/main.3e049e36.css.map",
-    "main.dfc6e552.js.map": "/react-portfolio-website/static/js/main.dfc6e552.js.map"
+    "main.b3a77d51.js.map": "/react-portfolio-website/static/js/main.b3a77d51.js.map"
   },
   "entrypoints": [
     "static/css/main.3e049e36.css",
-    "static/js/main.dfc6e552.js"
+    "static/js/main.b3a77d51.js"
   ]
 }
